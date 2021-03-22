@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Auth::routes(['verify' => true]);
+
+Route::get('/home', 'HomeController@index')->name('home');
+//Bab 37
+Route::get('/pegawai', 'PegawaiController@index');
+Route::get('/pegawai/cetak_pdf', 'PegawaiController@cetak_pdf');
