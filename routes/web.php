@@ -23,3 +23,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 //Bab 37
 Route::get('/pegawai', 'PegawaiController@index');
 Route::get('/pegawai/cetak_pdf', 'PegawaiController@cetak_pdf');
+//Route::get('/index', 'IndexController@index');
+//Bab 38
+Route::get('/siswa', 'SiswaController@index');
+Route::get('/siswa/export_excel', 'SiswaController@export_excel');
