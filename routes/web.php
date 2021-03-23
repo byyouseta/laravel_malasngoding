@@ -27,3 +27,5 @@ Route::get('/pegawai/cetak_pdf', 'PegawaiController@cetak_pdf');
 //Bab 38
 Route::get('/siswa', 'SiswaController@index');
 Route::get('/siswa/export_excel', 'SiswaController@export_excel');
+//Bab 39
+Route::post('/siswa/import_excel', 'SiswaController@import_excel');
